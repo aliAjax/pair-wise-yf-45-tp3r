@@ -14,6 +14,7 @@ const i18n = createI18n({
     "zh-CN": {
       schedule: "通告编排",
       conflicts: "冲突中心",
+      postpone: "顺延台",
       history: "版本历史",
       save: "保存",
       draft: "离线草稿"

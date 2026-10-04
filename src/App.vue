@@ -23,6 +23,7 @@ const isOnline = computed({
       <nav>
         <RouterLink to="/" :class="{ active: route.name === 'schedule' }">◫ {{ t("schedule") }}</RouterLink>
         <RouterLink to="/conflicts" :class="{ active: route.name === 'conflicts' }">△ {{ t("conflicts") }} <em>{{ store.conflicts.length }}</em></RouterLink>
+        <RouterLink to="/postpone" :class="{ active: route.name === 'postpone' }">⤳ {{ t("postpone") }} <em v-if="store.pendingScenes.length">{{ store.pendingScenes.length }}</em></RouterLink>
         <RouterLink to="/history" :class="{ active: route.name === 'history' }">↺ {{ t("history") }}</RouterLink>
       </nav>
       <div class="network-card">
